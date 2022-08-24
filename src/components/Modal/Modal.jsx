@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./Modal.module.scss";
 
-const Modal = ({setIsOpen,book}) => {
+const Modal = ({setIsModalOpen,book}) => {
     console.log(book);
   return (
     <div className={style.background}>
@@ -12,7 +12,7 @@ const Modal = ({setIsOpen,book}) => {
                 <p><span>Published date:</span> {book.volumeInfo.publishedDate}</p>
                 <p><span>Average rating:</span>{book.volumeInfo.averageRating}/5</p>
                 <p><span>Country:</span> {book.saleInfo.country}</p>
-                <button onClick={()=>setIsOpen(false)}>Close</button>
+                <button onClick={()=>setIsModalOpen(false)}>Close</button>
             </div>
     </div>
     </div>

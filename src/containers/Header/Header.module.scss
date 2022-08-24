@@ -1,0 +1,15 @@
+.Container{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width:70%;
+    margin-bottom: 40px;
+}
+._image{
+    width:200px;
+}
+._title{
+    color:#0238D5;
+    font-family: 'Square Peg', cursive;
+    font-size: 100px;
+}

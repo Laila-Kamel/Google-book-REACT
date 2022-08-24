@@ -1,0 +1,41 @@
+.background{
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+.modalBox{
+    background-color: white;
+    width:550px;
+    height:380px;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    border:2px solid #0238D5;
+}
+.modalText{
+    padding: 20px;
+    font-size: 20px;
+}
+.modalText span{
+    font-weight: bold;
+    padding-right: 5px;
+}
+.modalText button{
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:#0238D5;
+    border:2px solid #0238D5;
+    position:absolute;
+    right:30px;
+}
+.modalText button:hover{
+    cursor: pointer;
+}

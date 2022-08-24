@@ -12,7 +12,7 @@ const Modal = ({setIsModalOpen,book}) => {
                 <p><span>Published date:</span> {book.volumeInfo.publishedDate}</p>
                 <p><span>Average rating:</span>{book.volumeInfo.averageRating}/5</p>
                 <p><span>Country:</span> {book.saleInfo.country}</p>
-                <button onClick={()=>setIsModalOpen(false)}>Close</button>
+                <button onClick={(e)=>{setIsModalOpen(false); e.stopPropagation()}}>Close</button>
             </div>
     </div>
     </div>
